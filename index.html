@@ -1,127 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
-</head>
-<body>
-    <header>
-        <!-- header content goes here -->
-         <h1>BrightBlog - Law Firm Deadline Pages</h1>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
+    <head>
+        <title>LawTrack Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    </head>
+
+
+
+
+    <body>
+        <!--Navigation Bar-->
+        <header style="background-color: blueviolet;">
+            <ul style="color: gold;">
+                <li>
+                    <button style="background-color: blueviolet;"> 
+                    <a style="color: gold;" href="law_firm_home.html">Home</a> 
+                    </button>
+                </li>
+                    </button>
+                <li>Calendar</li>
+                <li> 
+                    <button style="background-color: blueviolet">
+                        <a style="color: gold;" href="firm_list.html">Firm List</a>
+                    </button>
+                </li>
+                <li>My Profile</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <header>
-                <h2>Ten Top Law Firms</h2>
-                <h3>Read time: 5 minutes</h3>
-            </header>
-            <main>
-                <p> Ten law firms you should research <br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non tempora alias maxime officiis doloribus, repudiandae dicta sint fugiat? Quisquam reprehenderit cumque iste aut hic. Blanditiis rerum esse rem debitis veritatis sint neque minima voluptates, odit ullam. Quo, eos odio. Pariatur soluta inventore laudantium iure! Tempora inventore ipsa unde. Debitis, animi? ipsum dolor sit amet consectetur, adipisicing elit. Quasi accusantium adipisci quam. Doloremque impedit, neque debitis, corporis odit porro nobis ducimus similique tenetur necessitatibus ex.
+        </header>
 
-                </p>
-            </main>
+        <main>
+            <h1>LawTrack Home</h1>
+
+        
+            <hr>
+            <!-- Comment Formula-->
+                <p> The platform that makes applications a walk in the park</p><br>
+                
+            
+    <!--Main Body Text & Test Calendar/Table-->
+                <img src="HomePageBackground.jpg" alt=""
+                alt="London skyline during dusk"
+                height="200">
+
+                <h3>September Deadlines</h3>
+
+                <table border="2" style="color: black; background-color: white;">
+                    <tr align="center">
+                        <th width="150">1st</th>
+                        <th width="150">2nd</th>
+                        <th width="150">3rd</th>
+                        <th width="150">4th</th>
+                        <th width="150">5th</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Mischon Open Day</td>
+                        <td>Bird & Bird TC opens</td>
+                        <td>Skadden spring vac closes</td>
+                        <td>BCLP Open Day</td>
+                        <td>CC Summer Vac Opens</td>
+                    </tr>
+                </table> 
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <!-- Practice Form -->
+
+                <form action="index.php" method="POST"> 
+                    
+                    <label for="username">username:</label>
+                    <input type="text" id="username" placeholder="Clifford123" minlength="5" required> 
+
+                    <label for="password">password:</label>
+                    <input type="password" id="password" minlength="8" maxlength="20" required> <br>
+                    
+                    <label for="email">email:</label>
+                    <input type="email" id="email" placeholder="slaughter_may@gmail.com"><br>
+                    
+                    <label for="bday">birthdate</label>
+                    <input type="date" id="bday"><br>
+
+                    <label for="payment">payment</label>
+                    <select id="payment">
+                        <option value="Visa">Visa</option>
+                        <option value="Google Pay">Google Pay</option>
+                        <option value="PayPal">PayPal</option>
+                    </select><br>
+
+                    <label for="comment">comment</label>
+                    <input type="comment"><br>
+
+                    <label for="file">file</label>
+                    <input type="file" id="file" accept=".docx">
+
+
+                    <input type="submit"><br>
+                    <input type="reset">
+
+
+                    
+
+
+                </form>
+        </main>
             <footer>
-                <h2>Author: Ned Whitney</h2>
-                <h3>Last posted 20-08-2024</h3>
-                <a href="https://www.legalcheek.com/the-firms-most-list/" target="_blank">Check out Legal Cheek's Most List For More Info</a>
+
+
             </footer>
-        </article>
-        <aside>
-            <section>
-                <h3>Filter by Month</h3>
-                <nav>
-                    <ul>
-                        <li><a href=""></a>Filter for January </li>
-                        <li><a href=""></a>Filter for February</li>
-                        <li><a href=""></a>Filter for March</li>
-                    </ul>
-                </nav>
-            </section>
-            <section>
-                <h3>Filter by category</h3>
-                <nav>
-                    <ul>
-                        <li><a href=""></a>IP</li>
-                        <li><a href=""></a>Tech</li>
-                        <li><a href=""></a>Corporate</li>
-                    </ul>
-                </nav>
-            </section>
-        </aside>
-        <hr>
-        <h2>Sign Up Here</h2>
-        <form action="">
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" required> <br>
-
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" required> <br>
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required> <br>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" id="password"> <br>
-
-            <label for="favourite_law_firm">Favourite Law Firm:</label>
-
-            <input type="radio" name="favourite_law_firm" id="CMS" value="CMS">
-            <label for="CMS">CMS</label>
-
-            <input type="radio" name="favourite_law_firm" id="TLT" value="TLT">
-            <label for="TLT">TLT</label>
-
-            <input type="radio" name="favourite_law_firm" id="BCLP" value="BCLP">
-            <label for="BCLP">BCLP</label> <br>
-
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="wales">Wales</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select> <br>
-
-            <label for="bio">Biography</label> <br>
-            <textarea name="bio" id="bio" cols="30" rows="5"></textarea> <br>
-
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to the Site!</label> <br>
-
-            <input type="submit" value="Send">
-
-
-        </form>
-    </main>
-    <footer>
-        <h2>BrightBlog Site</h2>
-        <section>
-            <nav>
-                <ul>
-                   <div>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Careers</a></li>
-                    </div>
-                    <div>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms and Conditions</a></li>
-                        <li><a href="">Cookie Policy</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </section>
-    </footer>
-</body>
-</html>
+    </body>
+</html> 
